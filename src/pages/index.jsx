@@ -1,12 +1,12 @@
-import { Head } from "minista"
+// этот объект 👇 будет передаваться в качестве props для global.jsx
+export const metadata = {
+  title: 'Home',
+};
 
 export default function () {
   return (
     <>
-      <Head>
-        <title>Hello!</title>
-      </Head>
-      <h1>Hello!</h1>
+      <h1>Home page</h1>
     </>
-  )
+  );
 }
