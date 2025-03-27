@@ -5,12 +5,12 @@ import Footer from '@/layouts/Footer';
 import Header from '@/layouts/Header';
 
 export default function (props) {
-  const { children, title } = props;
+  const { children, title, url } = props;
 
   return (
     <>
       <Head title={title} />
-      <Header />
+      <Header url={url}/>
       <Content>{children}</Content>
       <Footer />
     </>
